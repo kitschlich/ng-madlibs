@@ -1,0 +1,65 @@
+.container {
+    width: 80%;
+    margin: 6em auto;
+    border: 2px solid black;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.icon {
+    float: left;
+    width: 20%;
+    border-right: 2px solid black;
+    padding: 5px 15px;
+    box-sizing: border-box;
+}
+
+.masthead {
+    float: left;
+    width: 80%;
+}
+
+.masthead img {
+    width: 33%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+.masthead h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.word-bank {
+    border-bottom: 2px solid black;
+    padding: 2em;
+}
+
+.col-3 {
+    width: 33%;
+    float: left;
+}
+
+input {
+    margin: .5em 0;
+}
+
+.story {
+    padding: 2em;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
