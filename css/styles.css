@@ -1,5 +1,6 @@
 .container {
     width: 80%;
+    min-width: 540px;
     margin: 6em auto;
     border: 2px solid black;
 }
@@ -52,6 +53,7 @@ header {
 
 input {
     margin: .5em 0;
+    display: block;
 }
 
 .story {
