@@ -20,7 +20,7 @@
         <h2 class="instructions">Provide the following words:</h2>
         <div class="words">
             <div class="col-3">
-                <input type="text" placeholder="male name" ng-init="maleName='{{male name}\}'" ng-model="maleName">
+                <input type="text" placeholder="male name" ng-init="maleName='male name'" ng-model="maleName">
                 <input type="text" placeholder="job title" ng-init="jobTitle='{{job title}\}'" ng-model="jobTitle">
                 <input type="text" placeholder="tedious task" ng-init="tediousTask='{{tedious task}\}'" ng-model="tediousTask">
             </div>
@@ -37,7 +37,7 @@
         </div>
     </section>
     <section class="story">
-        <p>{{ maleName }} was a {{jobTitle}} who loved technology. Although he 
+        <p><span ng-class="{'fill-in': maleName == 'male name'}">{{maleName}}</span> was a {{jobTitle}} who loved technology. Although he 
         loved parts of his job, he absolutely hated {{tediousTask}} and {{dirtyTask}}. 
         So, {{maleName}} met with his life mentor, {{celebrity}} who told
         him to learn how to {{uselessSkill}} with Thinkful. Thinkful didn't offer 

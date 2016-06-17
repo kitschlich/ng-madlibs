@@ -1,5 +1,5 @@
 .container {
-    width: 80%;
+    max-width: 800px;
     min-width: 540px;
     margin: 6em auto;
     border: 2px solid black;
@@ -58,6 +58,18 @@ input {
 
 .story {
     padding: 2em;
+}
+
+.fill-in {
+    border-bottom: 1px solid black;
+}
+
+.fill-in::before {
+    content: "{{";
+}
+
+.fill-in::after {
+    content: "}}";
 }
 
 .group:after {
