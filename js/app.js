@@ -2,15 +2,14 @@ angular.module('app', []);
 
 angular.module('app')
 .controller('HomeController', function($scope) {
-    $scope.model = {
-        maleName: 'male name',
-        jobTitle: 'job title',
-        tediousTask: 'tedious task',
-        dirtyTask: 'dirty task',
-        celebrity: 'celebrity',
-        uselessSkill: 'useless skill',
-        obnoxiousCelebrity: 'obnoxious celebrity',
-        hugeNumber: 'huge number',
-        adjective: 'adjective'
-    };
+    var vm = this;
+    this.maleName = 'male name';
+    this.jobTitle = 'job title';
+    this.tediousTask = 'tedious task';
+    this.dirtyTask = 'dirty task';
+    this.celebrity = 'celebrity';
+    this.uselessSkill = 'useless skill';
+    this.obnoxiousCelebrity = 'obnoxious celebrity';
+    this.hugeNumber = 'huge number';
+    this.adjective = 'adjective';
 });
