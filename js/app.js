@@ -1,15 +1,25 @@
 angular.module('app', []);
 
 angular.module('app')
-.controller('HomeController', function($scope) {
+.controller('HomeController', function($scope, $timeout, $window) {
     var vm = this;
-    this.maleName = 'male name';
-    this.jobTitle = 'job title';
-    this.tediousTask = 'tedious task';
-    this.dirtyTask = 'dirty task';
-    this.celebrity = 'celebrity';
-    this.uselessSkill = 'useless skill';
-    this.obnoxiousCelebrity = 'obnoxious celebrity';
-    this.hugeNumber = 'huge number';
-    this.adjective = 'adjective';
+    vm.appState = 'blank';
+    
+    $scope.submit = function() {
+        if ($scope.wordbank.$valid) {
+            console.log('success!');
+            $timeout(function() { 
+                vm.appState = 'generated';
+            }, 0);
+        }
+    };
+    
+    $scope.restart = function() {
+        $timeout(function() {
+            vm.appState = 'blank';
+            vm.inputs = {};
+            $scope.wordbank.$setPristine();
+            $scope.wordbank.$setUntouched();
+        }, 0);
+    };
 });

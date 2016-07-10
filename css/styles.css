@@ -52,8 +52,27 @@ header {
 }
 
 input {
-    margin: .5em 0;
+    margin: .5em auto;
     display: block;
+    text-align: center;
+}
+
+.submit {
+    width: 90%;
+    margin: 1em auto;
+    border-top: 2px solid black;
+}
+
+.generate {
+    float: right;
+    margin-top: 2em;
+}
+
+.error {
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: .5em 2em;
 }
 
 .story {
@@ -64,12 +83,8 @@ input {
     border-bottom: 1px solid black;
 }
 
-.fill-in::before {
-    content: "{{";
-}
-
-.fill-in::after {
-    content: "}}";
+.restart {
+    float: right;
 }
 
 .group:after {
